@@ -1,0 +1,266 @@
+
+/* Opšti stilovi */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #0d0d13;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navigacija */
+nav {
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  top: 0; /* Dodato */
+  backdrop-filter: blur(5px);
+  z-index: 10; /* Dodato, proverite da li je ovo dovoljno visoko */
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "Prompt", sans-serif;
+  margin-left: 50px;
+}
+
+#logo img {
+  margin-right: 15px;
+}
+
+#logo h1 {
+  text-transform: uppercase;
+}
+
+.aplikacijee {
+  padding: 5px 10px 5px 10px;
+  background-color: #2db357;
+  border-radius: 10px;
+  box-shadow: #175243 4px 4px 0 0;
+  color: #175243;
+  transition: all 0.2s ease;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.aplikacijee:active {
+  box-shadow: #175243 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section {
+  background-color: rgba(14, 14, 17, 0.39);
+  max-width: 1000px;
+  width: 80%;
+  padding: 5px 20px 5px 5px;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin: 50px auto 50px auto;
+  backdrop-filter: blur(5px);
+  display: flex;
+  color: white;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styled-table td {
+  padding: 15px;
+  text-align: left;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  height: 55px;
+  width: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  border-top: 1px solid white;
+  margin-top: 75px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: #09090b;
+  overflow: hidden;
+  z-index: -1;
+}
+.background li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: #2db357;
+  animation: animate 19s linear infinite;
+}
+
+.background li:nth-child(0) {
+  left: 61%;
+  width: 123px;
+  height: 123px;
+  bottom: -123px;
+  animation-delay: 1s;
+}
+.background li:nth-child(1) {
+  left: 9%;
+  width: 184px;
+  height: 184px;
+  bottom: -184px;
+  animation-delay: 2s;
+}
+.background li:nth-child(2) {
+  left: 5%;
+  width: 192px;
+  height: 192px;
+  bottom: -192px;
+  animation-delay: 8s;
+}
+.background li:nth-child(3) {
+  left: 64%;
+  width: 135px;
+  height: 135px;
+  bottom: -135px;
+  animation-delay: 3s;
+}
+.background li:nth-child(4) {
+  left: 22%;
+  width: 153px;
+  height: 153px;
+  bottom: -153px;
+  animation-delay: 17s;
+}
+.background li:nth-child(5) {
+  left: 51%;
+  width: 121px;
+  height: 121px;
+  bottom: -121px;
+  animation-delay: 15s;
+}
+.background li:nth-child(6) {
+  left: 44%;
+  width: 167px;
+  height: 167px;
+  bottom: -167px;
+  animation-delay: 9s;
+}
+.background li:nth-child(7) {
+  left: 41%;
+  width: 107px;
+  height: 107px;
+  bottom: -107px;
+  animation-delay: 33s;
+}
+.background li:nth-child(8) {
+  left: 18%;
+  width: 131px;
+  height: 131px;
+  bottom: -131px;
+  animation-delay: 22s;
+}
+.background li:nth-child(9) {
+  left: 57%;
+  width: 139px;
+  height: 139px;
+  bottom: -139px;
+  animation-delay: 28s;
+}
+
+@media screen and (max-width: 425px) {
+  #logoimg {
+    height: 35px;
+    width: 35px;
+  }
+  #logoh1 {
+    font-size: 15px;
+  }
+  #logo {
+    margin-left: 20px;
+  }
+  p {
+    font-size: 12px;
+  }
+  a {
+    font-size: 11px;
+  }
+  section {
+    width: 70%;
+  }
+  footer {
+    height: 50px;
+  }
+  nav {
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  p {
+    font-size: 10.5px;
+  }
+  a {
+    font-size: 10px;
+  }
+  section {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  p {
+    font-size: 10px;
+  }
+  a {
+    font-size: 10px;
+  }
+  section {
+    width: 70%;
+  }
+}
